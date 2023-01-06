@@ -1,2 +1,2 @@
 # saurabhkumar70049.github.io
-this just a practice repository
+this is just a practice repository
