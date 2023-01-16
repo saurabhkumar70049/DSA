@@ -67,7 +67,7 @@ bool equilibrium_point(int arr[], int n) {
 
 
 int main() {
-    int arr[6] = {3, 4, 8, -9, 9, 7};
-    equilibrium_point(arr, 6) == 1 ? cout << "YES" : cout << "NO";
+    int arr[6] = {2,3,-1,8,4};
+    equilibrium_point(arr, 5) == 1 ? cout << "YES" : cout << "NO";
 
 }
