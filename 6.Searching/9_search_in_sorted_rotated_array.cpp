@@ -79,8 +79,8 @@ int search_key(int arr[], int n, int key){
         if (arr[mid] == key) {
             return mid;
         }
-        else if(arr[mid] > arr[first]) {
-            if (arr[first] <= key && arr[mid - 1] >= key) {
+        else if(arr[mid] >= arr[first]) {
+            if (arr[first] <= key && arr[mid] > key) {
                 last = mid-1;
             }
             else {
@@ -88,7 +88,7 @@ int search_key(int arr[], int n, int key){
             }
         }
         else {
-            if(arr[mid+1] <= key && arr[last] >= key) {
+            if(arr[mid] < key && arr[last] >= key) {
                 first = mid+1;
             }
             else {
@@ -100,7 +100,7 @@ int search_key(int arr[], int n, int key){
 }
 
 int main() {
-    int arr[] = {13, 28, 1, 2, 4};
-    int key = 28;
-    cout << search_key(arr, 5, key);
+    int arr[] = {3, 1};
+    int key = 1;
+    cout << search_key(arr, 2, key);
 }
