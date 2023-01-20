@@ -1,3 +1,7 @@
+// Here we need to make merge two sorted in sorted form
+// exmple : arr1 = [2,4,8,9], arr2 = [1,4,9] 
+// output : arr3 = [1,2,4,4,8,9,9]
+
 #include<bits/stdc++.h>
 using namespace std;
 
