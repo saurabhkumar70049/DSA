@@ -94,7 +94,7 @@ void flips(int arr[], int n) {
                 cout << "from " << i << " to ";
             }
             else {
-                cout << i << endl;
+                cout << i - 1<< endl;
             }
         }
     }
