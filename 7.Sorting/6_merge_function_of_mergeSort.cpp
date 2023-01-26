@@ -1,3 +1,9 @@
+//here, we have a array which divided into two part and both part is sorted in itself, so our task is
+// to make this array sorted
+// example -- arr[] = [2,5,7, 1,9,11];
+// output arr[] = {1,2,5,7,9,11};
+
+
 #include<bits/stdc++.h>
 using namespace std;
 

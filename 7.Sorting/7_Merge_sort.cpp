@@ -3,10 +3,10 @@ using namespace std;
 
 void mergeArray (int arr[], int low, int mid, int high) {
     
-    int n1 = mid+1, n2 = high - mid;
+    int n1 = mid-low+1, n2 = high - mid;
     int arr1[n1], arr2[n2];
-    for (int i = 0; i < n1; i++) {
-        arr1[i] = arr[low+i];
+    for (int i = low; i < n1+low; i++) {
+        arr1[i-low] = arr[i];
     }
     for (int i = 0; i < n2; i++) {
         arr2[i] = arr[mid+1+i];
