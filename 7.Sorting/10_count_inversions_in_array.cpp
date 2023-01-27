@@ -60,7 +60,7 @@ int mergeFunction(vector<int> &vec, int l, int mid, int h) {
     return count;
 } 
 
-int inversion(vector<int> &vec, int l, int h) {
+int inversion(vector<int> &vec, int l, int h) { // time complexity = O(nlogn)
     int count = 0;
     if(l < h) {
         int mid = l + (h-l)/2;
