@@ -1,1 +1,1 @@
-count++;
+cout << endl;
