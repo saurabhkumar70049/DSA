@@ -1,3 +1,7 @@
+//given an array which only have 0, 1 in it. we need to find number of one in it;
+// ex = {0,0,0,1,1}
+//o/p = 2
+
 #include <bits/stdc++.h>
 using namespace std;
 

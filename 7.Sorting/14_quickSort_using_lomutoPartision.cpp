@@ -27,8 +27,8 @@ void quickSort(int arr[], int low, int high) {
 }
 
 int main() {
-    int arr[] = {8, 4, 7, 9, 3, 10, 5};
-    quickSort(arr, 0, 6);
+    int arr[] = {2, 3, 1, 2};
+    quickSort(arr, 0, 3);
     for(int i : arr) {
         cout << i << " ";
     }

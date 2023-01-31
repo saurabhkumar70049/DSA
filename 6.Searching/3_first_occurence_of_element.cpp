@@ -1,5 +1,5 @@
 // In this question, find first occurence of element in O(logn)
-// arr[] = {3, 10, 10, 13, 13}
+// arr[] = {3, 10, 10, 13, 13} , key = 10
 // output = 1  --(index)
 
 #include <bits/stdc++.h>
