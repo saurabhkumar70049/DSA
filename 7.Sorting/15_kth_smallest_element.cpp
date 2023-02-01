@@ -1,3 +1,10 @@
+/*
+Given an array ARR and a integer K. we need tell the kth smallest number
+exmaple --> arr = {2, 9, 1, 10, 8, 3}, k = 4
+            output --> 8
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
