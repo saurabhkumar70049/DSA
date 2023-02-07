@@ -19,12 +19,17 @@ void cycleSort(int arr[], int n) {
             i++;
             continue;
         }
+        while((arr[index] == arr[i]) && index < n) {
+            index++;
+        }
+        
         swap(arr[i], arr[index]);
+        i++;
     }
 }
 
 int main() {
-    int arr[] = {20, 2, 7, 27, 1};
+    int arr[] = {20, 2, 7, 27, 2};
     cycleSort(arr, 5);
     for(int i : arr) {
         cout << i << " ";

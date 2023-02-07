@@ -1,1 +1,3 @@
-cout << j << " ";
+for(int s : noElement) {
+        cout << s << " ";
+    }
