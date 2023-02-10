@@ -1,3 +1,1 @@
-for(int s : noElement) {
-        cout << s << " ";
-    }
+ // cout << (arr[0]%100)/(100/10) <<endl;
