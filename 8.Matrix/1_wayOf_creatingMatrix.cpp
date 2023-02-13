@@ -66,7 +66,7 @@ using namespace std;
 void createMatrix() {
     vector<vector<int>> vec; //In this method, number of row can be dynamic
     for(int i = 0; i < 5; i++) {
-        vector<int> v;
+        vector<int> v;    //
         for(int j = 0; j < 2; j++) {
             v.push_back(10);
             // cout << vec[i][j] << " ";    
