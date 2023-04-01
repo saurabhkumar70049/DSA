@@ -34,7 +34,7 @@ int hoarePartision(int arr[], int low, int high) {
 }
 
 int main() {
-    int arr[] = {2, 1, 3, 0};
+    int arr[] = {2, 1, 8, 0};
     int n = sizeof(arr)/sizeof(arr[0]);
     cout << hoarePartision(arr, 0, n-1)<<endl;
     for(int i : arr) {

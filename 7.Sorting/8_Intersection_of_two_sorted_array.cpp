@@ -1,7 +1,7 @@
 /*
 two sorted arrays are given, we need to return intersection of these two array
 arr1 = {2,3, 5, 5, 7, 7, 7}, arr2 = {1, 3, 5, 5, 5, 9}
-output = {3, 5}; //element present in both the array and repeated in this array
+output = {3, 5}; //element present in both the array and not repeated in this array
 */
 #include<bits/stdc++.h>
 using namespace std;

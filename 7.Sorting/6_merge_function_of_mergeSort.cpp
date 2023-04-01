@@ -24,8 +24,8 @@ void sortArray(int arr[], int n, int low, int mid, int high) {
     int n2 = high - mid;
     int arr1[n1], arr2[n2];
     int i = 0;
-    while(i <= mid) {
-        arr1[i] = arr[i];
+    while(i < n1) {
+        arr1[i] = arr[low+i];
         i++;
     }
     int k = 0;

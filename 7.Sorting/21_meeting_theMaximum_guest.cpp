@@ -56,7 +56,7 @@ int maxGuestMeet(int a[], int d[], int n) {
 
 int main() {
     int arrival[] = {800, 100, 600, 500, 650};
-    int departure[] = {840, 320, 830, 540, 810};
+    int departure[] = {840, 200, 830, 540, 810};
     int n = sizeof(arrival)/sizeof(arrival[0]);
     cout << maxGuestMeet(arrival, departure, n);
 }

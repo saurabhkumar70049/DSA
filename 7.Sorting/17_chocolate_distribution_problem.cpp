@@ -1,5 +1,6 @@
-/*Given an array which contain chocolate packets and array index show that a packet contain how many chocolate
-and k number of children. Distribute the packet to the children in such way that diffence between maximum chocolate and minimum chocolate packet should be minimum
+/*Given an array which contain chocolate packets and array index show that a packet contain how many 
+chocolate and k number of children. Distribute the packet to the children in such way that diffence 
+between maximum chocolate and minimum chocolate packet should be minimum
 example --> arr[] = {10, 1, 7, 13, 2, 3};
     output --> 2
 */
