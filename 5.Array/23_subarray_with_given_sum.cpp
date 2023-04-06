@@ -3,7 +3,7 @@
 // sum = 16
 // output = Yes
 
-
+// this technique is not working with negative value
 
 #include <bits/stdc++.h>
 using namespace std;
