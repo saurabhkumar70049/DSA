@@ -1,6 +1,6 @@
 //given two list of element and we need to find out intersection of its
 //Note : select element present in both the list
-// ex : arr1 = {9,9, 3, 11, 4}, arr2 = {3,  1, 12, 12, 9}
+// ex : arr1 = {9, 9, 3, 11, 4}, arr2 = {3,  1, 12, 12, 9}
 // out = {3, 9}
 
 #include<bits/stdc++.h>
@@ -46,6 +46,6 @@ void intersectionOfArray(vector<int> &vec, vector<int> &vec1){ //time complexity
 
 int main() {
     vector<int> vec = {3, 18, 4, 7, 9};
-    vector<int> vec1 = {9, 7, 15, 3};
+    vector<int> vec1 = {9, 7, 15, 3, 3};
     intersectionOfArray(vec, vec1);
 }
