@@ -9,7 +9,7 @@ int occurence_first(int arr[], int f, int l, int key) {
     while(f <= l) {
         int mid = (f+l)/2;
         if (arr[mid] == key) {
-            if(arr[mid-1] != key || mid == 0) {
+            if(mid == 0 || arr[mid-1] != key ) {
                 return mid;
             }
             l = mid -1;

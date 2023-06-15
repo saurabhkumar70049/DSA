@@ -39,6 +39,7 @@ void solve (int arr[], int n) {   // time complexity = O(N)
     }
     //remember
     int right_most_bit = xor1 & (-xor1);   // (xor1) & (-xor1) will give us right set bit
+    // cout << right_most_bit<<endl;
 
     int x = 0, y = 0;
     for (int i = 0; i < n; i++) {

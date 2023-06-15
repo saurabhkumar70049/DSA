@@ -3,10 +3,10 @@ using namespace std;
 
 // void rotate_arr(int arr[], int n, int d) {   //time complexity = O(n*d) and space = O(1)
 //     int temp;
-//     for (int i = 1; i <= d; i++) {
+//     for (int i = 0; i < d; i++) {
 //         temp = arr[0];
-//         for (int i = 1; i < n; i++) {
-//             arr[i - 1] = arr[i];
+//         for (int j = 1; j < n; j++) {
+//             arr[j - 1] = arr[j];
 //         }
 //         arr[n - 1] = temp;
 //     }

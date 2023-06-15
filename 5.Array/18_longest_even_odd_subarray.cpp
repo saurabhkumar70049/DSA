@@ -1,5 +1,5 @@
 //In this question we need to check longest odd - even alternative 
-// ex - arr[] = {10, 12, 8, 3, 14} so, answer = 3 from 3 to 14
+// ex - arr[] = {10, 12, 8, 3, 14} so, answer = 3 from 8 to 14
 
 #include<bits/stdc++.h>
 using namespace std;

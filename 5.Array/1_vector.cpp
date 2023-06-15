@@ -46,7 +46,5 @@ int main() {
     cout << "Elements of vector1 are\n";
     for (int i = 0; i < v2.size(); i++)
         cout << v2[i] << " ";
-
-
-    
+  
 }
