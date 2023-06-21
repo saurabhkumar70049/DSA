@@ -1,4 +1,4 @@
-//find out only a single peak element in array
+//find out any one peak element in array || koi bhi ek pick elment btana hai chahe koi bhi koi fark nhi pad rha hai
 //   arr[] = {20, 10, 12 19, 30, 23}
 // output = 20 (we need to tell only one peak element)
 // naive solution would be simple, you can run a loop and find out peak
