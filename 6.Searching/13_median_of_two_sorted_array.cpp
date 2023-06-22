@@ -41,10 +41,10 @@ using namespace std;
 
 
 float median(int arr1[], int arr2[], int n1, int n2) {
-    int i = 0, j = n2;
+    int i = 0, j = n1;
     while(i <= j) {
         int i1 = (i+j)/2;
-        int i2 = ((n1+n2+1)/2) - i1;
+        int i2 = ((n1+n2+1)/2) - i1; // it is a formula to tell equiter point in arr2
         int min1 = (i1 == n1) ? INT_MAX : arr1[i1];
         int max1 = (i1 == 0) ? INT_MIN : arr1[i1-1];
         int min2 = (i2 == n2) ? INT_MAX : arr2[i2];
@@ -68,7 +68,7 @@ float median(int arr1[], int arr2[], int n1, int n2) {
 }
 
 int main() {
-    int arr1[] = {1, 3, 6, 7, 9};
+    int arr1[] = {1, 3, 6, 7, 9}; // arr1 must be smaller among both
     int arr2[] = {12,23,34,45,56,67,89};
 
     cout << median(arr1, arr2, 5, 7);

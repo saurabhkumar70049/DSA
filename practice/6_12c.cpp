@@ -1,17 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int tripletSum(vector<int> &vec, int sum) {
+string tripletSum(vector<int> &vec, int sum) {
     int first = 0, last = vec.size()-1;
     while(first <= last) {
         int secondSum = vec[first]+vec[last];
         if(secondSum <= sum) {
-            
+            for(int i = first+1; i < last; i++) {
+                if(secondSum+vec[i] == sum) {
+                    cout << first << " " << i << " " << last <<endl;
+                    return "yes";
+                }
+                else if(secondSum+vec[i] > sum) {
+                    break;
+                }
+            }
+            first++;
         }
         else {
-            return -1;
+            last--;
         }
     }
+    return "no";
 
 }
 
