@@ -1,3 +1,5 @@
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -9,6 +11,7 @@ int patternCount(string text, string str) {  //time Complexity = O((n*m+1)*m)
             j++;
         }
         if(j == str.length()) {
+            cout <<"Starting Index : " << i << endl;
             count++;
         }
     }
