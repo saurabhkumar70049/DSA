@@ -74,7 +74,7 @@ int inversion(vector<int> &vec, int l, int h) { // time complexity = O(nlogn)
 }
 
 int main() {
-    vector<int> vec = {20, 14, 11, 3};
+    vector<int> vec =  {2, 4, 1, 3};
     cout << inversion(vec, 0, vec.size()- 1);
     cout << endl;
     for (auto v : vec) {
