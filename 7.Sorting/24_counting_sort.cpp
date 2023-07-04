@@ -32,6 +32,8 @@ void countingSort(int arr[], int n, int k) {
     for(int s : noElement) {
         cout << s << " ";
     }
+    cout << endl;
+    
     int output[n];
     for(int i = n-1; i >= 0; i--) {
         output[noElement[arr[i]] - 1] = arr[i];

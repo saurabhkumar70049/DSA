@@ -31,7 +31,7 @@ vector<pair<int, int>> mergerOverlapping(vector<pair <int,int>> &vec) { //here w
     int index = 0;
     for(int i = 1; i < vec.size(); i++) {
         
-        if(vec[i].first <= vec[index].second) {
+          if(vec[i].first <= vec[index].second) {
             vec[index].first = min(vec[index].first, vec[i].first);
             vec[index].second = max(vec[index].second, vec[i].second);
         }
