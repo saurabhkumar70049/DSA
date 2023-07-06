@@ -11,8 +11,10 @@ void unionOfArray(vector<int> &vec, vector<int> &vec1) {
     for(int i = 0; i < vec1.size(); i++) {
         s.insert(vec1[i]);
     }
-    cout << s.size();
-
+    // cout << s.size();
+    for(int i : s){
+        cout << i << " ";
+    }
 }
 
 int main() {

@@ -28,6 +28,7 @@ int longestConsecutive(vector<int> &vec) {
     unordered_set<int> s(vec.begin(), vec.end());
     int res = 1;
     for(auto i = s.begin(); i != s.end(); i++) {
+        cout << *i << " " ;
         int count = 1;
         if(s.find(*i - 1) != s.end()) {
             continue;
@@ -42,6 +43,6 @@ int longestConsecutive(vector<int> &vec) {
 }
 
 int main() {
-    vector<int> vec = {10, 7, 14, 3, 9, 10, 11};
+    vector<int> vec = {10, 7, 14, 3, 9, 17, 11};
     cout << longestConsecutive(vec);
 }

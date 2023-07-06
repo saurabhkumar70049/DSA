@@ -1,5 +1,5 @@
 // arr = {3, 8, 1, -1, 7}, sum = 6 => output : true
-                    //      sum = 14 => output : false
+//                         sum = 14 => output : false
 
 
 #include<bits/stdc++.h>

@@ -23,7 +23,7 @@ bool zeroSum(vector<int> &vec) {
         if(s.find(prefixSum) != s.end()) {
             return true;
         }
-        else if(prefixSum == 0) {
+        else if(prefixSum == 0) {  // this condition will be true when we have zero sum from 0th index to someWhere
             return true;
         }
         else {
