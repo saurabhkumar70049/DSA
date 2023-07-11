@@ -3,27 +3,52 @@ using namespace std;
 
 int longestSubstring(string str){
     unordered_map<char, int> m = {make_pair(str[0], 0)};
-    int indexStart = 0, count = 1, maxCount = 1;
-    for(int i = 1; i < str.length(); i++){
-        auto it = m.find(str[i]);
+    int start = 0, maxCount = 1;
+    for(int end = 1; end < str.length(); end++){
+        auto it = m.find(str[end]);
         if(it != m.end()){
-            if(indexStart <= it->first){
-                maxCount = max(maxCount, count);
-                count = count - it->second;
-                indexStart = it->second + 1;
-
-            }
-            m[str[i]] = i;
+            start = max(start, m[str[end]] + 1);
         }
-        else {
-            count++;
-            m.insert(make_pair(str[i], i));
-        }
+        m[str[end]] = end;
+        maxCount = max(maxCount, end-start+1);
+        cout << str[end] << " : " << maxCount << endl;
     }
-    maxCount = max(maxCount, count);
+    
     return maxCount;
 
 }
+
+
+// int longestSubstring(string str){
+//     unordered_set<char> s;
+ 
+//     int len = 0;
+//     int i = 0;
+//     int maxLength = 0;
+//     while(i < str.length()){
+//         if(s.find(str[i]) == s.end()){
+//             s.insert(str[i]);
+//             len++;
+//             i++;
+//             if(len > maxLength){
+//                 maxLength = len;
+//             }
+//         }
+//         else {
+//             if(len == 1){
+//                 i++;
+//             }
+//             else {
+//                 s.clear();
+//                 i = i - len + 1;
+//                 len = 0;
+//             }
+            
+//         }
+//     }
+//     return maxLength;
+// }
+
 
 int main(){
     string str;
