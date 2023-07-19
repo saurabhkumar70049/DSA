@@ -81,3 +81,68 @@ int main() {
         cout << v <<" ";
     }
 }
+
+
+// #include <bits/stdc++.h> 
+
+// long long merge(long long arr[], int low, int mid, int high){
+//     int n1 = mid-low+1;
+//     int n2 = high-mid;
+
+//     int arr1[n1];
+//     int arr2[n2];
+
+//     int k = 0;
+//     while(k < n1){
+//         arr1[k] = arr[low+k];
+//         k++;
+//     }
+//     k = 0;
+//     while(k < n2){
+//         arr2[k] = arr[k+mid+1];
+//         k++;
+//     }
+//     long long count = 0;
+//     int i = 0, j = 0, index = low;
+//     while(i < n1 && j < n2){
+//         if(arr1[i] > arr2[j]){
+//             arr[index] = arr2[j];
+//             j++;
+//             count += (n1-i);
+//         }
+//         else {
+//             arr[index]= arr1[i];
+//             i++;
+//         }
+//         index++;
+//     }
+//     while(i < n1){
+//         arr[index] = arr1[i];
+//         i++;
+//         index++;
+//     }
+//     while(j < n2){
+//         arr[index] = arr2[j];
+//         j++;
+//         index++;
+//     }
+//     cout << count << endl;
+//     return  count;
+// }
+
+
+// long long mergeFunction(long long arr[], int low, int high){
+//     long long count = 0;
+//     while(low < high){
+//         int mid = low + (high-low)/2;
+//         count += mergeFunction(arr, low, mid);
+//         count += mergeFunction(arr, mid+1, high);
+//         count += merge(arr, low, mid, high);
+//     }
+//     return count;
+// }
+// long long getInversions(long long *arr, int n){
+//     // Write your code here.
+//     long long count = mergeFunction(arr, 0, n-1);
+//     return count;
+// }

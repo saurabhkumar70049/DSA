@@ -25,34 +25,24 @@ Node *insertAtEnd(Node* head, int data){
 
 Node* insertAtAnyPosition(Node* head, int pos, int data){
     Node *temp = new Node(data);
-    Node *curr = head;
     if(pos == 1){
-        temp->next = curr;
-        curr = temp;
-        return curr;
+        temp->next = head;
+        head = temp;
+        return head;
     }
     int count = 0;
-    Node *prev = NULL;
-    while(count != pos-1 && head != NULL){
+    Node *curr = head;
+    while(count != pos-2 && curr != NULL){
         count++;
-        prev = head;
-        head = head->next;
+        curr = curr->next;
     }
-    if(head == NULL && count+1 != pos){
-        cout << "Position doesn't exist" <<endl;
-        return curr;
+    if(curr == NULL){
+        cout << "This position is not exist ";
+        return head;
     }
-    
-
-    if(prev->next == NULL){
-        prev->next = temp;
-        return curr;
-    }
-
-    temp->next = head;
-
-    prev->next = temp;
-    return curr;
+    temp->next = curr->next;
+    curr->next = temp;
+    return head;
 }
 
 void printElement(Node* head){
