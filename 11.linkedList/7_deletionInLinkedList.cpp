@@ -29,11 +29,33 @@ Node *deleteElementAtBiginning(Node* head){
         return NULL;
     }
     else {
+        
+    }
+    
+}
+
+Node *deleteElementAtAnyPlace(Node* head, int pos){
+    if(pos == 1){
         Node* temp = head->next;
         delete head;
         return temp;
     }
-    
+    int count = 1;
+    Node* curr = head;
+    while(count != pos-1 && curr->next != NULL){
+        curr = curr->next;
+        count++;
+    }
+    if(curr->next == NULL){
+        cout << "position don't exist" <<endl;
+        return head;
+    }
+
+    Node* temp = curr->next;
+    curr->next = curr->next->next;
+    delete temp;
+    return head;
+
 }
 
 int main() {
@@ -48,7 +70,11 @@ int main() {
 
     printElement(head);
 
-    head = deleteElementAtBiginning(head);
+    cout << "Enter Position of element : " ;
+    int pos;
+    cin >> pos;
+
+    head = deleteElementAtAnyPlace(head, pos);
 
     printElement(head);
 }
