@@ -5,7 +5,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// bool subsequence(string str1, string str2) {    //this solution have some boundation like string2 must be in sequence that string1 have
+// bool subsequence(string str1, string str2) {    //this solution have some boundation like string2 must be in sequence like string1 have
 //     int j = 0, i = 0; 
 //     for(i = 0; i < str1.length() && j < str2.length(); i++) {
 //         if(str1[i] == str2[j]) {

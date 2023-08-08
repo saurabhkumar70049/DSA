@@ -29,7 +29,7 @@ int main() {
     cout<< str5 << endl;
     getline(cin, str6);
     cout<< str6 << endl;
-    getline(cin, str7, 'A');
+    getline(cin, str7, 'A'); // here A tell that until which you want to read the input. ex. intput: saurabh singhAjava || read : saurabh Singh
     cout<< str7 << endl;
 
     // print(arr);
