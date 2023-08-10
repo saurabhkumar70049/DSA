@@ -3,7 +3,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int patternCount(string text, string str) {  //time Complexity = O((n*m+1)*m)
+int patternCount(string text, string str) {  //time Complexity = O((n-m+1)*m)
     int count = 0;
     for(int i = 0; i < text.length()-str.length()+1; i++) {
         int j = 0;

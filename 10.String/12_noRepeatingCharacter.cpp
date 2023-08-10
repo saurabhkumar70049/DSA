@@ -1,4 +1,4 @@
-//{ Driver Code Starts
+//Function to find the first non-repeating character in a string.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,7 +8,7 @@ using namespace std;
 class Solution
 {
     public:
-    //Function to find the first non-repeating character in a string.
+    
     // char nonrepeatingCharacter(string s)
     // {
     //    char ans = '$';

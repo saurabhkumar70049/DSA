@@ -1,3 +1,6 @@
+//Find out the left most repeating element 
+// ex. input : acdrcdr , output : c
+
 #include<bits/stdc++.h>
 using namespace std;
 

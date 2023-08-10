@@ -1,3 +1,4 @@
+//Anagram : it is a permutational string means all character str1 is present in str2. Position of string don't matter
 #include<bits/stdc++.h>
 using namespace std;
 

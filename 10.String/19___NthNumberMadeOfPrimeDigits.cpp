@@ -25,7 +25,7 @@ Constraints:
 1 <= N <= 100 
 */
 
-#include<bits/stdc++.h>;
+#include<bits/stdc++.h>
 using namespace std;
 
 int arr[100] = {0};

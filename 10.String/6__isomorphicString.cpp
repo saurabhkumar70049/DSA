@@ -116,7 +116,8 @@ int main()
     int t;
     cin>>t;
     string s1,s2;
-    while (t--) {
+    while (t--) 
+    {
         cin>>s1;
         cin>>s2;
         Solution obj;

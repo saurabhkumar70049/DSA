@@ -77,7 +77,7 @@ class Solution
 				
 			}
 			else if(temp != "") {
-				sum += int(std::stoi(temp));
+				sum += int(std::stoi(temp)); //The stoi() is a standard library function that turns a string into an integer
 				temp = "";
 			}
 		}
