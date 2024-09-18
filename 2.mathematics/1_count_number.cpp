@@ -29,3 +29,4 @@ int main() {
     int count = counting(x);
     cout << count << " digit present in number";
 }
+

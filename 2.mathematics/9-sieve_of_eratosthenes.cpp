@@ -11,10 +11,19 @@ void sieve(int x) {   // time complexity = O(n * log(log n))
     bool arr[x+1];
     memset(arr, true, sizeof(arr)); //Memset() is a C++ function. It copies a single character for a specified number of times to an object. It is defined in <cstring> header file.
 
-    for (int i = 2; i*i <= x; i++) {
+    for (int i = 2; i*i <= x; i++) {   
+    // The idea is to use the square of i (i * i). 
+    // Whenever we talk about divisors, they always exist in pairs.
+    // One of the divisors in the pair is guaranteed to be smaller 
+    // or equal to the square root of the number (sqrt(x)). 
+    // Hence, we only need to check up to sqrt(x) to find divisors.
         if (arr[i] == true) {
-            for (int j = i*i; j <= x; j += i) {
-                arr[j] = false;
+            for (int j = i*i; j <= x; j += i) {  
+                // We start with i * i because any smaller multiples of i 
+                // (such as i * (i - 1), i * (i - 2), etc.) would have already 
+                // been marked as composite by smaller divisors. 
+                // Hence, we begin marking multiples of i from i * i.
+                arr[j] = false; 
             }
         }
     }
